@@ -1,0 +1,41 @@
+<nav class="navbar navbar-light bg-white shadow-sm sticky-top border-bottom mb-3">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center fw-bold text-primary" href="/Notes">
+      <i class="fa-solid fa-note-sticky me-2 fs-1"></i>
+      <span class="d-none d-sm-inline">NoteNest</span>
+    </a>
+
+    <!-- Navbar Links -->
+    <div class="d-flex ms-auto align-items-center gap-3">
+
+      <!-- Home -->
+      <a href="/Notes" class="d-flex flex-column flex-sm-row align-items-center justify-content-center text-decoration-none">
+        <button class="btn btn-primary" ><i class="fa-solid fa-house fs-5"></i>
+        <span class="d-none d-sm-inline ms-1 text-dark">Home</span></button>
+        
+      </a>
+
+      <% if(currUser){ %>
+      <!-- Add Note -->
+      <a href="/Notes/new" class="d-flex flex-column flex-sm-row align-items-center justify-content-center text-decoration-none">
+        <button class="btn btn-success" ><i class="fa-solid fa-plus fs-5 text-dark"></i>
+        <span class="d-none d-sm-inline ms-1 text-dark">Add Note</span>
+        </button>
+      </a>
+
+      <!-- Logout -->
+      <a href="/logout" class="d-flex flex-column flex-sm-row align-items-center justify-content-center text-decoration-none">
+        <button class="btn btn-danger" ><i class="fa-solid fa-right-from-bracket fs-5 text-dark"></i>
+        <span class="d-none d-sm-inline ms-1 text-dark">Logout</span>
+        </button>
+      </a>
+      <% } %>
+
+    </div>
+  </div>
+</nav>
+
+
+
